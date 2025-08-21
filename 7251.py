@@ -380,7 +380,7 @@ def optimize_portfolio(etf_type, start_date, end_date, p_value, q_value, server_
         w = w_1 - 1
 
         # --- 5. Set up QUBO Model ---
-        num_bits = 4
+        num_bits = 5
         x = Array.create("x", shape=(N, num_bits), vartype="BINARY")
         weights = np.array([2 ** j for j in range(num_bits)])
 
